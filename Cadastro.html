@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/formulario.css">
+    <title>Gestão de TI</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <section class="logo-fatec">
+            <img class="logo-fatec-img" src="img/fatec-logo.png">
+        </section>
+
+        <section class="titulo-pagina">
+            <h1 class="titulo">Gestão da Tecnologia da Informação</h1>
+        </section>
+
+        <section class="menu">
+            <nav class="navegacao">
+                <a class="menu-itens" href="index.html">Inicio</a>
+                <a class="menu-itens" href="Cursos.html">Disciplinas</a>
+                <a class="menu-itens" href="Cadastro.html">Cadastro</a>
+                <a class="menu-itens" href="sobre.html">Sobre</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="formulario-cadastro">
+            <h2 class="formulario-titulo">Cadastro de Alunos</h2>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="nome-completo">Nome Completo:</label>
+                    <input type="text" id="nome-completo" name="nome-completo" class="input-nome-completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="cidade-origem">Cidade de Origem:</label>
+                    <input type="text" id="cidade-origem" name="cidade-origem" class="input-cidade-origem" required>
+                </div>
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" class="input-data-nascimento" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" class="input-telefone" required>
+                </div>
+                <button type="submit" class="btn-submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+<footer class="rodape"> Desenvolvido por: Guilherme Reis e Gabriel Meronha </footer>
+</html>
